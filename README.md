@@ -1,13 +1,41 @@
-# Health Insurance Prediction
+# Health Insurance Prediction using Machine Learning
 
-## Project Overview
-This project predicts health insurance charges based on customer information such as age, gender, BMI, number of children, smoking status, and region using Machine Learning algorithms.
+## Overview
 
-The goal is to help insurance companies estimate medical insurance costs accurately and improve decision-making.
+This project predicts health insurance charges using Machine Learning techniques based on customer information such as age, gender, BMI, number of children, smoking status, and region. The objective is to build a predictive model that estimates medical insurance costs accurately.
+
+---
+
+## Project Structure
+
+```
+Health_Insurance_Prediction/
+│
+├── Health_Insurance_Prediction.ipynb
+├── insurance_prediction.csv
+└── README.md
+```
+
+---
+
+## Dataset
+
+The dataset contains the following features:
+
+| Feature | Description |
+|---------|-------------|
+| Age | Age of the customer |
+| Sex | Gender of the customer |
+| BMI | Body Mass Index |
+| Children | Number of dependents |
+| Smoker | Smoking status |
+| Region | Residential region |
+| Charges | Medical insurance charges (Target Variable) |
 
 ---
 
 ## Features
+
 - Data preprocessing and cleaning
 - Exploratory Data Analysis (EDA)
 - Data visualization
@@ -30,79 +58,54 @@ The goal is to help insurance companies estimate medical insurance costs accurat
 
 ---
 
-## Project Structure
-
-```
-Health-Insurance-Prediction/
-│
-├── Health_Insurance_Prediction.ipynb
-├── insurance.csv
-├── README.md
-└── requirements.txt
-```
-
----
-
-## Dataset
-
-The dataset contains the following features:
-
-| Feature | Description |
-|----------|-------------|
-| Age | Age of the person |
-| Sex | Male/Female |
-| BMI | Body Mass Index |
-| Children | Number of dependents |
-| Smoker | Smoking status |
-| Region | Residential area |
-| Charges | Medical insurance cost (Target Variable) |
-
----
-
 ## Installation
 
-1. Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Health-Insurance-Prediction.git
+git clone https://github.com/your-username/Health_Insurance_Prediction.git
 ```
 
-2. Navigate to the project folder
+### Navigate to the project folder
 
 ```bash
-cd Health-Insurance-Prediction
+cd Health_Insurance_Prediction
 ```
 
-3. Install the required libraries
+### Install the required libraries
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-4. Open the notebook
+### Run the notebook
 
 ```bash
 jupyter notebook
 ```
 
----
+Open:
 
-## Machine Learning Workflow
-
-- Import Dataset
-- Data Cleaning
-- Exploratory Data Analysis
-- Feature Encoding
-- Train-Test Split
-- Model Training
-- Model Evaluation
-- Prediction
+```
+Health_Insurance_Prediction.ipynb
+```
 
 ---
 
-## Model Evaluation
+## Workflow
 
-Evaluation metrics include:
+1. Import the dataset
+2. Data preprocessing
+3. Exploratory Data Analysis
+4. Feature engineering
+5. Train-test split
+6. Model training
+7. Model evaluation
+8. Insurance charge prediction
+
+---
+
+## Evaluation Metrics
 
 - Mean Absolute Error (MAE)
 - Mean Squared Error (MSE)
@@ -111,44 +114,52 @@ Evaluation metrics include:
 
 ---
 
-## Sample Output
+## Sample Prediction
 
-The model predicts the estimated health insurance charges based on user input.
+### Input
 
-Example:
+| Feature | Value |
+|---------|-------|
+| Age | 35 |
+| Gender | Male |
+| BMI | 27.8 |
+| Children | 2 |
+| Smoker | No |
+| Region | Southeast |
+
+### Output
 
 ```
-Input:
-Age = 35
-BMI = 27.5
-Children = 2
-Smoker = No
+Predicted Insurance Charge: ₹28,450
+```
 
-Predicted Insurance Charge:
-$8,250
+---
+
+## Required Libraries
+
+```text
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+```
+
+Install them using:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ---
 
 ## Future Improvements
 
-- Deploy using Flask or Streamlit
-- Hyperparameter tuning
-- Compare multiple ML algorithms
-- Build an interactive web application
-- Improve prediction accuracy
-
----
-
-## Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
-3. Commit your changes
-4. Push to your branch
-5. Open a Pull Request
+- Improve model accuracy using advanced algorithms
+- Perform hyperparameter tuning
+- Develop a web application using Streamlit or Flask
+- Deploy the model on cloud platforms
+- Add real-time prediction functionality
 
 ---
 
@@ -157,3 +168,5 @@ Contributions are welcome!
 **Naveen Surendar S**
 
 ---
+
+This project was developed for educational purposes to demonstrate the application of Machine Learning techniques in predicting health insurance charges.
