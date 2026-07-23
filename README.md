@@ -169,4 +169,3 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 
 ---
 
-This project was developed for educational purposes to demonstrate the application of Machine Learning techniques in predicting health insurance charges.
